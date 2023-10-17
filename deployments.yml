@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: myweb
-        image: docker.io/bsanthosha/tomcat:latest1
+        image: docker.io/bsanthosha/tomcat:latest-$BUILD_NUMBER
         ports:
         - containerPort: 8080
