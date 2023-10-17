@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mywebdeployment
+  namespace: webapp
   labels:
     app: myweb
 spec:
@@ -16,6 +17,6 @@ spec:
     spec:
       containers:
       - name: myweb
-        image: kammana/myweb:"$(version)"
+        image: docker.io/bsanthosha/tomcat:latest1
         ports:
         - containerPort: 8080
